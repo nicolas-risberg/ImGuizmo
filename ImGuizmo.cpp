@@ -63,6 +63,9 @@ namespace IMGUIZMO_NAMESPACE
 
    static bool Intersects(OPERATION lhs, OPERATION rhs)
    {
+      if (lhs == -1)
+         return false;
+
      return (lhs & rhs) != 0;
    }
 
